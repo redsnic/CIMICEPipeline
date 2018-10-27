@@ -9,14 +9,13 @@ This file contains the I/O and the settings management procedures of the CIMICE 
 
 import Dataset, os, shutil, subprocess, findDifferences
 import SnippyCsv
-from findDifferences import findDifferences
 from mergeDatasets import mergeDatasets
 
 def help_msg():
     msg = "\n"
     msg += "===================================         CIMICE pipeline           ===================================\n"
     msg += "\n"
-    msg += "This is the CIMICE pipeline for bacterial genome analysis \n"
+    msg += "This is the CIMICE pipeline for bacterial genome analysis.\n"
     msg += "It's goal is to provide an easy to use software to extract mutational\n"
     msg += "matrices from annotated bacterial sequences. \n"
     msg += "Snippy ('https://github.com/tseemann/snippy') is used for variant calling \n"
@@ -65,7 +64,7 @@ def help_msg():
     msg += "         they are in TRONCO format and contain informations about the gene gains and \n"
     msg += "         and loss in the given samples if compared to the given references.  \n"
     msg += "\n"
-    msg += "   MERGE: merges the informations of a list of datasets in a single one called 'merged_datasets.CAPRI'\n"
+    msg += "   MERGE: merge the informations of a list of datasets in a single one called 'merged_datasets.CAPRI'\n"
     msg += "\n"
     msg += "   HELP: print this message.\n"
     msg += "\n"
