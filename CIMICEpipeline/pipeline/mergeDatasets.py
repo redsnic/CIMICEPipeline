@@ -2,6 +2,8 @@
 Created on 27 ott 2018
 
 @author: redsnic
+
+dataset merging procedure
 '''
 
 import Dataset

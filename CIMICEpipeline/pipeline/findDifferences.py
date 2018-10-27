@@ -2,6 +2,8 @@
 Created on 27 ott 2018
 
 @author: redsnic
+
+difference dataset preparation
 '''
 
 import os, Dataset, fileinput

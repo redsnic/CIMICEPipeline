@@ -2,6 +2,8 @@
 Created on 25 ott 2018
 
 @author: redsnic
+
+Mutational matrix representation in the pipeline
 '''
 
 import fileinput,os

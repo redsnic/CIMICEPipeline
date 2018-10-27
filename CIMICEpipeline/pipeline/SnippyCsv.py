@@ -2,6 +2,8 @@
 Created on 25 ott 2018
 
 @author: redsnic
+
+Reader for snippy's csv files
 '''
 
 import fileinput, os
