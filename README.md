@@ -26,10 +26,9 @@ To run the pipeline write and execute the following in a terminal
 python3 <path_to_CIMICEpipeline.py> <args>
 ```
 
-In this table you can see the supported arguments and how they are formatted
+In this table you can see all the supported arguments and how they are formatted
 
 ```
-
 ========================================================================================================
 
 USAGE: CIMICEpipeline <MODE> <ARGS>
