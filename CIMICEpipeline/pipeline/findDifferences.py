@@ -90,7 +90,7 @@ def findDifferences(ref_folder, seq_folder, identifier):
     present.create(list(all_genes), present_lines)  
     present.sort()  
     f = open("dataset_"+identifier+"_present.CAPRI", "w")
-    f.write(present().toCAPRI())    
+    f.write(present.toCAPRI())    
     print("done, output in files " + "dataset_"+identifier+"_absent.CAPRI" + " and " + "dataset_"+identifier+"_present.CAPRI")
 
 if __name__ == "__main__":

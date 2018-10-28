@@ -30,8 +30,8 @@ def mergeDatasets(paths):
         for p in dicts:
             sample = p[0]
             total_samples.add(sample)
-            #print(p)
-            for x,y in p[1].items():
+            #second element is always one
+            for x,_ in p[1].items():
                 try:
                     samples_info[sample][x] = 1
                 except KeyError:

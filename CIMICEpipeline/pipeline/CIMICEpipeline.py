@@ -7,8 +7,9 @@ This file contains the I/O and the settings management procedures of the CIMICE 
 
 '''
 
-import Dataset, os, shutil, subprocess, findDifferences
+import Dataset, os, shutil, subprocess
 import SnippyCsv
+from findDifferences import findDifferences
 from mergeDatasets import mergeDatasets
 
 def help_msg():
@@ -211,10 +212,7 @@ class CIMICEpipline():
             
         print("post processing phase:")
         # prepare output folder
-        folder = 'tables_'+ref_id
-        if os.path.exists(folder):
-            shutil.rmtree(folder)
-        os.makedirs(folder)  
+         
         out = []
         try:        
             file_list = os.listdir(args[1])
@@ -228,7 +226,7 @@ class CIMICEpipline():
             sys.exit(-2)
         
         # prepare for output
-        f = open("dataset_"+args[0]+".CAPRI", "w")
+        f = open("dataset_"+ref_id+".CAPRI", "w")
         dataset = to_dataset(out)
         dataset.sort()
         f.write(dataset.toCAPRI())            

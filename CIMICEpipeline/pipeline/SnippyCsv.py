@@ -63,7 +63,7 @@ class SnippyCsv(object):
                 i=0
                 for h in self.header:
                     try:
-                        self.table[h].append(l[i])
+                        self.table[h].append(l[i].replace("\n", "")) # remove newline for last element
                         i+=1
                     except IndexError:
                         self.table[h].append("")
