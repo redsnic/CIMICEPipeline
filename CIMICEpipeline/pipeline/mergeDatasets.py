@@ -7,7 +7,7 @@ dataset merging procedure
 '''
 
 import Dataset
-import fileinput
+
 
 def mergeDatasets(paths):
     print("Merging datasets...")
